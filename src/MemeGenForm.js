@@ -29,7 +29,7 @@ function MemeGenForm({ generateMeme }) {
     <section id="gen-fields" className="container">
       <form id="meme-form" onSubmit={handleSubmit}>
         <div className="form-group row">
-          <label for="img-link" className="col-md-2 col-form-label"> Meme Image URL:</label>
+          <label htmlFor="img-link" className="col-md-2 col-form-label"> Meme Image URL:</label>
           <input
             name="imgUrl"
             value={imgUrl}
@@ -40,7 +40,7 @@ function MemeGenForm({ generateMeme }) {
           />
         </div>
         <div className="form-group row">
-          <label for="top-text" className="col-md-2 col-form-label">Top Text:</label>
+          <label htmlFor="top-text" className="col-md-2 col-form-label">Top Text:</label>
           <input
             name="topText"
             value={topText}
@@ -51,7 +51,7 @@ function MemeGenForm({ generateMeme }) {
           />
         </div>
         <div className="form-group row">
-          <label for="bottom-text" className="col-md-2 col-form-label">Bottom Text:</label>
+          <label htmlFor="bottom-text" className="col-md-2 col-form-label">Bottom Text:</label>
           <input
             name="bottomText"
             value={bottomText}

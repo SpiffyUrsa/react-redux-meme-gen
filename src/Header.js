@@ -8,10 +8,10 @@ import React from "react";
 function Header() {
 
   return (
-    <header id="header" class="mb-3">
-      <nav class="navbar navbar-dark bg-primary rounded">
-        <img src="meme.jpg" alt="me-gusta" id="headerImg" class="navbar-left img-responsive" />
-        <h1 class="navbar-brand">Meme Generator</h1>
+    <header id="header" className="mb-3">
+      <nav className="navbar navbar-dark bg-primary rounded">
+        <img src="meme.jpg" alt="me-gusta" id="headerImg" className="navbar-left img-responsive" />
+        <h1 className="navbar-brand">Meme Generator</h1>
       </nav>
     </header>
   )

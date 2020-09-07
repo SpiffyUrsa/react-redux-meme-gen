@@ -7,7 +7,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 function App() {
 
-  const memes = useSelector(store => store.memes);
   const dispatch = useDispatch();
 
   function generateMeme(memeData) {
