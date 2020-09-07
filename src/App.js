@@ -5,6 +5,10 @@ import MemeGenForm from "./MemeGenForm";
 import MemeList from "./MemeList";
 import { useSelector, useDispatch } from "react-redux";
 
+/**Renders Header, MemeGenForm and MemeList components 
+ * 
+ * function : generateMeme -> invokes dispatch by passing type and payload to add meme in list
+*/
 function App() {
 
   const dispatch = useDispatch();

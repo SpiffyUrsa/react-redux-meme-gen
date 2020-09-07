@@ -1,6 +1,17 @@
 import React, { useState } from "react";
 
-
+/** Renders a Form 
+ * 
+ * props: generateMeme (function passed by parent component)
+ * 
+ * state: formData 
+ * 
+ * functions : 
+ * -handleChange => To keep track of change in values
+ * -handleSubmit => invoke generateMeme by passing formData
+ * 
+ * App -> MemeGenForm -> renders form
+*/
 function MemeGenForm({ generateMeme }) {
   const initialData = {
     topText: "",
@@ -23,6 +34,7 @@ function MemeGenForm({ generateMeme }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     generateMeme(formData);
+    setFormData(initialData)
   }
 
   return (
