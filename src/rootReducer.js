@@ -18,6 +18,7 @@ function rootReducer(currentState = INITIAL_STATE, action) {
     case "ADD_MEME":
       return { memes: [...currentState.memes, action.payload] }
     case "DELETE_MEME":
+      //filter based on id and naming
       const updatedMemes = currentState.memes.
         filter((meme, idx) => {
           return idx.toString() !== action.payload

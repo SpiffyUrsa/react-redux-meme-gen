@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./Header"
 import MemeGenForm from "./MemeGenForm";
 import MemeList from "./MemeList";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 /**Renders Header, MemeGenForm and MemeList components 
  * 
@@ -13,6 +13,7 @@ function App() {
 
   const dispatch = useDispatch();
 
+  //key
   function generateMeme(memeData) {
     dispatch({ type: "ADD_MEME", payload: memeData });
   }

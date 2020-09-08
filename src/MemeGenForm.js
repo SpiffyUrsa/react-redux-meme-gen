@@ -31,6 +31,7 @@ function MemeGenForm({ generateMeme }) {
     }));
   }
 
+  //Invoke dispatch here
   function handleSubmit(evt) {
     evt.preventDefault();
     generateMeme(formData);
